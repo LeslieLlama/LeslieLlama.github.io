@@ -1,0 +1,137 @@
+/* I barely understand why i set these rules, but it just werks every time */
+body, html, #nav {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+/* setting the body font allows us to take advantage of REM sizing
+dont worry about it if you have no fucking clue what that means
+also, orange */
+body {
+  font-size: 16px;
+  color: #f38d5e;
+}
+
+/* tells the nav to be a grid with certain sized columns, be at the top of the screen,
+have a cool orange color and a border etc */
+#nav {
+  display: grid;
+  position: fixed;
+  width: 100%;
+  grid-template-columns: 70% 10% 10% 10%;
+  font-size: 2rem;
+  text-align: center;
+  height: 3rem;
+  border-bottom: 3px #f38d5e solid;
+  grid-gap: 0px;
+}
+
+/* border left is what separates ur cute links */
+.nav-link {
+  border-left: 3px #f38d5e solid;
+  height: 3rem;
+  padding-top: 0.2rem;
+}
+
+/* basically the same soup reheated */
+#title {
+ height: 3rem;
+ text-align: left;
+ padding-left: 1rem;
+ padding-top: 0.2rem;
+}
+
+/* some special behaviors for the sub nav bar, very similar to regular nav */
+#sub-nav {
+  background-color: #f38d5e;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  font-size: 1.2rem;
+  width: 100%;
+  top: 3.2rem;
+  height: 2rem;
+}
+
+/* ridiculous main container, offset exactly the right amount from the top of the screen
+to sit below the nav bar because they're both fixed because of REASONS  */
+#main-container {
+  position: fixed;
+  width: 100%;
+  top: 3.2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/* we have a slightly different version for the gallery pages because, you guessed it,
+the sub nav bar causes it to need to be offset slightly differently. im a clown */
+#main-container-gallery {
+  position: fixed;
+  width: 100%;
+  top: 5.2rem;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-top: 3px #f38d5e solid;
+}
+
+/* but at least we can pad them together */
+#main-container div, #main-container-gallery div {
+  padding: 1rem;
+}
+
+/* overflow-auto means we get a scroll bar but only if we actually need it
+btw, 'vh' is a really fun metric, it means view height: 100vh is the size of
+the vertical area of your browser window, basically. vw is the width version */
+#content-feed {
+  display: block;
+  height: 100vh;
+  overflow: auto;
+  border-right: 3px #f38d5e solid;
+}
+
+/* overflow-hidden and centered but otherwise the same */
+#about-sidebar {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* strips underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Nav link... oranj */
+#nav a {
+  color: #f38d5e;
+}
+
+/* Sub nav link... white */
+#sub-nav a {
+  color: #fff;
+}
+
+/* i dont even remember why i did this. im hung over rn */
+.sub-nav-link {
+  width: 100%;
+  padding-top: 0.2rem;
+}
+
+/* makes current link sexier */
+.current-link {
+  background-color: #f38d5e;
+  color: #fff;
+}
+
+/* again */
+.current-sub-link {
+  background-color: #fff;
+  color: #f38d5e;
+}
+
+/* remember to like and subscribe */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- you can absolutely change this description, it sets your metadata on google etc -->
+    <meta name="description" content="Leslie Crooks' portfolio site.">
+    <!-- don't change viewport unless you know why you're doing it tho -->
+    <meta name="viewport" content="width=device-width">
+    <!-- you CAN change this title. if you want -->
+    <title>Leslie's Funky Little Llama Hole</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- i chucked in a placeholder favicon.ico of a heart emoji that i got by googling emoji favicon generator -->
+    <!-- you can change that later -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  </head>
+
+  <body>
+
+  <!-- your basic nav bar!
+  adding the 'current-link' class will give that div a solid background
+  you'll have to fuck with the css a little if you add more links,
+  feel free to ask me about that if you do
+  the gallery.html, pixelart.html and otherart.html pages also have
+  a sub navigation bar with similar rules/behavior -->
+
+  <div id="nav">
+    <div id="title">leslie crooks</div>
+    <div class="nav-link"><a href="/leslie/index.html">home</a></div>
+    <div class="nav-link current-link">gallery</div>
+    <div class="nav-link"><a href="/leslie/blog.html">blog</a></div>
+  </div>
+
+  <div id="sub-nav">
+    <div class="sub-nav-link"><a href="/leslie/gallery.html">game design</a></div>
+    <div class="sub-nav-link current-sub-link">pixel art</div>
+    <div class="sub-nav-link"><a href="/leslie/otherart.html">other art</a></div>
+  </div>
+
+  <!-- this is just a simple, two-column main body for your site
+  anything you fill the content feed with should scroll when it gets too long,
+  the About Me currently doesn't scroll -->
+  <div id="main-container-gallery">
+  <div id="content-feed">content feed</div>
+  <div id="about-sidebar">
+  <!-- your About Me section goes here, it's centered -->
+    <img src="https://i.imgur.com/14892Rh.png">
+  </div>
+  </div>
+
+  </body>
+</html>
