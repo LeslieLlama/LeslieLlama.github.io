@@ -3,6 +3,7 @@ body, html, #nav {
   padding: 0px;
   margin: 0px;
   height: 100%;
+  background-color: #29366f;
 }
 
 /* setting the body font allows us to take advantage of REM sizing
@@ -10,7 +11,9 @@ dont worry about it if you have no fucking clue what that means
 also, orange */
 body {
   font-size: 16px;
-  color: #f38d5e;
+  /*color: #f38d5e;*/
+  color: #3b5dc9
+  background-color: #29366f;
 }
 
 /* tells the nav to be a grid with certain sized columns, be at the top of the screen,
@@ -23,13 +26,13 @@ have a cool orange color and a border etc */
   font-size: 2rem;
   text-align: center;
   height: 3rem;
-  border-bottom: 3px #f38d5e solid;
+  border-bottom: 3px #3b5dc9 solid;
   grid-gap: 0px;
 }
 
 /* border left is what separates ur cute links */
 .nav-link {
-  border-left: 3px #f38d5e solid;
+  border-left: 3px #3b5dc9 solid;
   height: 3rem;
   padding-top: 0.2rem;
 }
@@ -40,11 +43,12 @@ have a cool orange color and a border etc */
  text-align: left;
  padding-left: 1rem;
  padding-top: 0.2rem;
+ color: #b13e53;
 }
 
 /* some special behaviors for the sub nav bar, very similar to regular nav */
 #sub-nav {
-  background-color: #f38d5e;
+  background-color: #3b5dc9;
   display: grid;
   grid-template-columns: 30% 30% 30%;
   color: #fff;
@@ -75,7 +79,7 @@ the sub nav bar causes it to need to be offset slightly differently. im a clown 
   top: 5.2rem;
   display: grid;
   grid-template-columns: 60% 40%;
-  border-top: 3px #f38d5e solid;
+  border-top: 3px #3b5dc9 solid;
 }
 
 /* but at least we can pad them together */
@@ -90,7 +94,7 @@ the vertical area of your browser window, basically. vw is the width version */
   display: block;
   height: 100vh;
   overflow: auto;
-  border-right: 3px #f38d5e solid;
+  border-right: 3px #3b5dc9 solid;
 }
 
 /* overflow-hidden and centered but otherwise the same */
@@ -108,7 +112,7 @@ a {
 
 /* Nav link... oranj */
 #nav a {
-  color: #f38d5e;
+  color: #3b5dc9;
 }
 
 /* Sub nav link... white */
@@ -124,14 +128,14 @@ a {
 
 /* makes current link sexier */
 .current-link {
-  background-color: #f38d5e;
+  background-color: #3b5dc9;
   color: #fff;
 }
 
 /* again */
 .current-sub-link {
   background-color: #fff;
-  color: #f38d5e;
+  color: #3b5dc9;
 }
 
 /* remember to like and subscribe */
